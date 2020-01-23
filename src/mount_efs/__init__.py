@@ -130,7 +130,7 @@ SIGNED_HEADERS = ';'.join(CANONICAL_HEADERS_DICT.keys())
 REQUEST_PAYLOAD = ''
 
 FS_ID_RE = re.compile('^(?P<fs_id>fs-[0-9a-f]+)$')
-EFS_FQDN_RE = re.compile(r'^(?P<fs_id>fs-[0-9a-f]+)\.efs\.(?P<region>[a-z0-9-]+)\.amazonaws.com$')
+EFS_FQDN_RE = re.compile(r'^(?P<fs_id>fs[a-f]{0,1}-[0-9a-f]+)\.efs\.(?P<region>[a-z0-9-]+)\.amazonaws.com$')
 AP_ID_RE = re.compile('^fsap-[0-9a-f]{17}$')
 
 INSTANCE_METADATA_SERVICE_URL = 'http://169.254.169.254/latest/dynamic/instance-identity/document/'
