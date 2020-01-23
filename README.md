@@ -23,22 +23,10 @@ The `efs-utils` package has been verified against the following Linux distributi
 
 ## Installation
 
-### On Amazon Linux distributions
-
-For those using Amazon Linux or Amazon Linux 2, the easiest way to install `efs-utils` is from Amazon's repositories:
-
-```
-$ sudo yum -y install amazon-efs-utils
-```
-
-### On other Linux distributions
-
-Other distributions require building the package from source and installing it.
-
 - Clone this repository:
 
 ```
-$ git clone https://github.com/aws/efs-utils
+$ git clone https://github.com/aws-blogger/efs-utils
 $ cd efs-utils
 ```
 
@@ -129,7 +117,4 @@ By default, when using the EFS mount helper with TLS, it enforces certificate ho
 
 Once you’ve installed the `amazon-efs-utils` package, to upgrade your system’s version of `stunnel`, see [Upgrading Stunnel](https://docs.aws.amazon.com/efs/latest/ug/using-amazon-efs-utils.html#upgrading-stunnel).
 
-## License Summary
-
-This code is made available under the MIT license.
 
